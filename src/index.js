@@ -13,7 +13,10 @@ root.render(
     <h1>Weather App</h1>
     <Weather />
     <div className="footer">
-      <a href="" target="blank_">Open source code,</a> by Vladyslava Podzirei
+      <a href="https://github.com/VladaRey/react-weather-app" target="_blank" rel="noreferrer">
+        Open source code,
+      </a>{" "}
+      by Vladyslava Podzirei
     </div>
   </StrictMode>
 );
