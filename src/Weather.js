@@ -17,7 +17,7 @@ function handleResponse(response) {
       humidity: response.data.temperature.humidity,
       description: response.data.condition.description,
       wind: response.data.wind.speed,
-      icon: "https://ssl.gstatic.com/onebox/weather/64/sunny.png",
+      icon: response.data.condition.icon_url,
       city: response.data.city,
     });
   }
