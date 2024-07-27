@@ -17,7 +17,7 @@ function handleResponse(response) {
       humidity: response.data.temperature.humidity,
       description: response.data.condition.description,
       wind: response.data.wind.speed,
-      icon: response.data.condition.icon_url,
+      icon: response.data.condition.icon,
       city: response.data.city,
     });
   }
