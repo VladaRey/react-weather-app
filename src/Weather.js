@@ -10,7 +10,6 @@ let [weatherData, setWeatherData] = useState({ready: false});
 let [city, setCity] = useState(props.defaultCity);
 
 function handleResponse(response) {
-  console.log(response.data);
     setWeatherData({
       ready: true,
       temperature: response.data.temperature.current,
@@ -20,6 +19,7 @@ function handleResponse(response) {
       wind: response.data.wind.speed,
       icon: response.data.condition.icon,
       city: response.data.city,
+      coordinates: response.data.coordinates,
     });
   }
 
@@ -62,7 +62,7 @@ return (
       </div>
     </form>
     <WeatherInfo data={weatherData} />
-    <WeatherForecast />
+    <WeatherForecast coordinates={weatherData.coordinates} />
   </div>
 );
 } else {
