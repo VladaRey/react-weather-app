@@ -2,3 +2,6 @@
     color: #f65282;
     font-weight: bold;
 }
+.WeatherInfo ul {
+    color: rgba(39, 33, 66, 0.4);
+}

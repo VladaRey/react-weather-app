@@ -1,3 +1,6 @@
 .WeatherForecast-temperature span {
     color: #f65282;
 }
+.WeatherForecast-day {
+    color: rgba(39, 33, 66, 0.4);
+}
